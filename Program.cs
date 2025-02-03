@@ -1,7 +1,5 @@
 ﻿using System;
 
-using System.Threading.Tasks;
-
 namespace HomeWorkDynamicArray
 {
     internal class Program
