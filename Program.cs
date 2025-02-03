@@ -17,8 +17,8 @@ namespace HomeWorkDynamicArray
 
             while (isOpen)
             {
-                Console.WriteLine("получение суммы всех чисел массива введите - sum");
-                Console.WriteLine("длы выхода введите - exit");
+                Console.WriteLine($"получение суммы всех чисел массива введите - {CommandSumNumbers}");
+                Console.WriteLine($"длы выхода введите - {CommandExit}");
                 Console.WriteLine("-------------------------------------------");
                 Console.Write("Введите ваше число: ");
 
@@ -48,12 +48,9 @@ namespace HomeWorkDynamicArray
                 else
                 {
                     int[] tempNumbers = new int[numberesArray.Length + 1];
-
-                    for (int i = 0; i < tempNumbers.Length; i++)
-                    {
-                        tempNumbers[i] = Convert.ToInt32(inputUser);
-                    }
-
+                
+                    tempNumbers[tempNumbers.Length - 1] = Convert.ToInt32(inputUser);
+                    
                     for (int i = 0; i < numberesArray.Length; i++)
                     {
                         tempNumbers[i] = numberesArray[i];
